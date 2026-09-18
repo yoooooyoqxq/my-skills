@@ -1,0 +1,1597 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": false,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "beijing-kaokao-2026",
+    "title": "进京赶烤 · 北京",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-11-beijing.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-24",
+    "endDate": "2026-09-27",
+    "dayCount": 4,
+    "nightCountAway": 3,
+    "countries": [
+      {
+        "code": "CN",
+        "name": "中国",
+        "nameZh": "中国",
+        "nameEn": "China"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "CN"
+    ],
+    "citiesAndAreas": [
+      "北京"
+    ],
+    "routeSummary": "北京4天3晚 · 鸟巢演唱会 + 胡同美食漫游",
+    "groupSize": 3,
+    "primaryDestinationName": "北京",
+    "primaryDestinationCity": "北京"
+  },
+  "flightJourneys": [
+    {
+      "id": "journey-depart-bing-wuyue",
+      "direction": "departure",
+      "travelers": [
+        "饼",
+        "五月"
+      ],
+      "placeholder": false,
+      "status": "confirmed",
+      "missingFields": []
+    },
+    {
+      "id": "journey-depart-tongmomo",
+      "direction": "departure",
+      "travelers": [
+        "彤墨墨"
+      ],
+      "placeholder": false,
+      "status": "confirmed",
+      "missingFields": []
+    },
+    {
+      "id": "journey-return-bing-wuyue",
+      "direction": "return",
+      "travelers": [
+        "饼",
+        "五月"
+      ],
+      "placeholder": false,
+      "status": "confirmed",
+      "missingFields": []
+    },
+    {
+      "id": "journey-return-tongmomo",
+      "direction": "return",
+      "travelers": [
+        "彤墨墨"
+      ],
+      "placeholder": false,
+      "status": "confirmed",
+      "missingFields": []
+    }
+  ],
+  "flights": [
+    {
+      "id": "fl-001",
+      "journeyId": "journey-depart-bing-wuyue",
+      "sequence": 1,
+      "airline": {
+        "name": "中国铁路"
+      },
+      "flightNumber": "D18",
+      "isTrain": true,
+      "departure": {
+        "airportCode": "HZH",
+        "city": "杭州",
+        "station": "杭州站",
+        "date": "2026-09-24",
+        "time": "17:10",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "BJP",
+        "city": "北京",
+        "station": "北京站",
+        "date": "2026-09-25",
+        "time": "07:09",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "fl-002",
+      "journeyId": "journey-depart-tongmomo",
+      "sequence": 1,
+      "airline": {
+        "name": "中国联合航空"
+      },
+      "flightNumber": "KN5392",
+      "departure": {
+        "airportCode": "LLF",
+        "city": "永州",
+        "date": "2026-09-24",
+        "time": "17:00",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "PKX",
+        "city": "北京",
+        "date": "2026-09-24",
+        "time": "19:40",
+        "terminal": "",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "fl-003",
+      "journeyId": "journey-return-bing-wuyue",
+      "sequence": 1,
+      "airline": {
+        "name": "东方航空"
+      },
+      "flightNumber": "MU5133",
+      "departure": {
+        "airportCode": "PKX",
+        "city": "北京",
+        "date": "2026-09-27",
+        "time": "15:45",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "HGH",
+        "city": "杭州",
+        "date": "2026-09-27",
+        "time": "待确认",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "fl-004",
+      "journeyId": "journey-return-tongmomo",
+      "sequence": 1,
+      "airline": {
+        "name": "中国联合航空"
+      },
+      "flightNumber": "KN5391",
+      "departure": {
+        "airportCode": "PKX",
+        "city": "北京",
+        "date": "2026-09-27",
+        "time": "17:20",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "LLF",
+        "city": "永州",
+        "date": "2026-09-27",
+        "time": "待确认",
+        "utcOffset": "+08:00"
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "acc-001",
+      "name": "北京贵州大厦",
+      "checkIn": "2026-09-25",
+      "checkOut": "2026-09-27",
+      "nights": 2,
+      "address": "和平西桥地铁站附近",
+      "roomType": "待补充",
+      "pricePerNight": {
+        "currency": "CNY",
+        "amount": null
+      },
+      "totalPrice": {
+        "currency": "CNY",
+        "amount": null
+      },
+      "notes": "北京站出发地铁直达+步行约42min；北京站出发打车约26min"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-09-24",
+      "title": "出发日",
+      "subtitle": "各路人马集结北京",
+      "locations": [
+        "杭州站",
+        "北京站",
+        "永州零陵机场",
+        "北京大兴机场"
+      ],
+      "weather": {
+        "condition": "多云转小雨",
+        "tempHigh": 24,
+        "tempLow": 16
+      },
+      "schedule": [
+        {
+          "id": "d1-01",
+          "time": "17:10",
+          "type": "transport",
+          "text": "饼 & 五月 乘 D18 动车从杭州站出发",
+          "placeId": "place-hangzhou-station"
+        },
+        {
+          "id": "d1-02",
+          "time": "17:00",
+          "type": "flight",
+          "text": "彤墨墨 乘 KN5392 从永州出发",
+          "placeId": "place-yongzhou-airport"
+        },
+        {
+          "id": "d1-03",
+          "time": "19:40",
+          "type": "flight",
+          "text": "彤墨墨 抵达大兴机场，前往草桥酒店入住",
+          "placeId": "place-daxing-airport"
+        },
+        {
+          "id": "d1-04",
+          "time": "夜间",
+          "type": "rest",
+          "text": "饼 & 五月夜行动车中，次日晨抵达北京"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-09-25",
+      "title": "中秋快乐 · 三里屯 + 鸟巢演唱会",
+      "subtitle": "潮流街区 → 深深的鸟巢场",
+      "locations": [
+        "北京站",
+        "北京贵州大厦",
+        "THE BOX",
+        "世贸天阶",
+        "三里屯太古里",
+        "团结湖",
+        "鸟巢"
+      ],
+      "weather": {
+        "condition": "小雨转阴",
+        "tempHigh": 24,
+        "tempLow": 16
+      },
+      "schedule": [
+        {
+          "id": "d2-01",
+          "time": "07:09",
+          "type": "transport",
+          "text": "饼 & 五月 抵达北京站",
+          "placeId": "place-beijing-station"
+        },
+        {
+          "id": "d2-02",
+          "time": "08:00",
+          "type": "check-in",
+          "text": "北京贵州大厦集合，办理入住、安置行李、换洗衣服",
+          "placeId": "place-hotel"
+        },
+        {
+          "id": "d2-03",
+          "time": "08:00",
+          "type": "restaurant",
+          "text": "彤墨墨早餐参考：天宫院小吃·宝子炒肝儿（草桥店）",
+          "placeId": "place-tiangongyuan"
+        },
+        {
+          "id": "d2-04",
+          "time": "10:10",
+          "type": "attraction",
+          "text": "THE BOX 年轻潮流商业空间逛店拍照",
+          "placeId": "place-thebox"
+        },
+        {
+          "id": "d2-05",
+          "time": "11:00",
+          "type": "walk",
+          "text": "步行至世贸天阶，看天幕、逛周边",
+          "placeId": "place-shimao"
+        },
+        {
+          "id": "d2-06",
+          "time": "11:40",
+          "type": "walk",
+          "text": "步行至 T+ MALL 逛店歇脚",
+          "placeId": "place-tmall"
+        },
+        {
+          "id": "d2-07",
+          "time": "12:20",
+          "type": "restaurant",
+          "text": "午餐：PIZZA MAMA 三里屯店（推荐罗勒鸡肉、安格斯牛肉酱面）",
+          "placeId": "place-pizzamama"
+        },
+        {
+          "id": "d2-08",
+          "time": "13:20",
+          "type": "walk",
+          "text": "逛太古里南区 → 3.3大厦 → 三联韬奋书店",
+          "placeId": "place-south-taikoo"
+        },
+        {
+          "id": "d2-09",
+          "time": "14:00",
+          "type": "restaurant",
+          "text": "咖啡甜点：bada kitchen 或 图图家冰品（二选一）",
+          "placeId": "place-badakitchen"
+        },
+        {
+          "id": "d2-10",
+          "time": "14:40",
+          "type": "walk",
+          "text": "逛太古里北区，高端品牌+建筑拍照",
+          "placeId": "place-north-taikoo"
+        },
+        {
+          "id": "d2-11",
+          "time": "15:20",
+          "type": "restaurant",
+          "text": "晚餐：闽中闽（团结湖店）米其林必比登推荐",
+          "placeId": "place-minzhongmin",
+          "ticketIds": []
+        },
+        {
+          "id": "d2-12",
+          "time": "16:00",
+          "type": "note",
+          "text": "出发去鸟巢！人多场地大，需早点检票进场"
+        },
+        {
+          "id": "d2-13",
+          "time": "18:45",
+          "type": "attraction",
+          "text": "【深深的鸟巢场】演唱会开始！",
+          "placeId": "place-birdsnest"
+        },
+        {
+          "id": "d2-14",
+          "time": "21:00",
+          "type": "note",
+          "text": "演唱会结束，奥林匹克公园H口集合，地铁光速入站，不建议打车"
+        },
+        {
+          "id": "d2-15",
+          "time": "21:45",
+          "type": "restaurant",
+          "text": "夜宵：阿招鸡煲（鸟巢店）",
+          "placeId": "place-azhao"
+        },
+        {
+          "id": "d2-16",
+          "time": "23:00",
+          "type": "rest",
+          "text": "打车回北京贵州大厦，洗漱休息",
+          "placeId": "place-hotel"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-09-26",
+      "title": "胡同文化日",
+      "subtitle": "地坛 → 五道营 → 国子监 → 雍和宫 → 簋街",
+      "locations": [
+        "地坛公园",
+        "五道营胡同",
+        "国子监",
+        "雍和宫",
+        "北新桥",
+        "簋街"
+      ],
+      "weather": {
+        "condition": "小雨",
+        "tempHigh": 24,
+        "tempLow": 18
+      },
+      "schedule": [
+        {
+          "id": "d3-01",
+          "time": "10:00",
+          "type": "walk",
+          "text": "北京贵州大厦出发，前往地坛公园",
+          "placeId": "place-hotel"
+        },
+        {
+          "id": "d3-02",
+          "time": "10:20",
+          "type": "attraction",
+          "text": "地坛公园（南门进），看方泽坛、古柏、地坛的海拍光影",
+          "placeId": "place-ditan"
+        },
+        {
+          "id": "d3-03",
+          "time": "11:20",
+          "type": "walk",
+          "text": "步行往五道营胡同方向（约10-15分钟）"
+        },
+        {
+          "id": "d3-04",
+          "time": "11:40",
+          "type": "attraction",
+          "text": "五道营胡同穿行，感受胡同氛围",
+          "placeId": "place-wudaoying"
+        },
+        {
+          "id": "d3-05",
+          "time": "12:00",
+          "type": "restaurant",
+          "text": "午餐：马三洋芋片（北新桥/雍和宫附近）",
+          "placeId": "place-masanyangyu"
+        },
+        {
+          "id": "d3-06",
+          "time": "12:30",
+          "type": "attraction",
+          "text": "国子监 + 孔庙（门票30元，16:30停止入馆）",
+          "placeId": "place-guozijian",
+          "ticketIds": [
+            "ticket-guozijian"
+          ]
+        },
+        {
+          "id": "d3-07",
+          "time": "13:15",
+          "type": "restaurant",
+          "text": "国子监→雍和宫沿途咖啡甜点歇脚"
+        },
+        {
+          "id": "d3-08",
+          "time": "13:40",
+          "type": "attraction",
+          "text": "雍和宫排队入场（门票25元，需提前公众号预约）",
+          "placeId": "place-yonghegong",
+          "ticketIds": [
+            "ticket-yonghegong"
+          ]
+        },
+        {
+          "id": "d3-09",
+          "time": "14:00",
+          "type": "attraction",
+          "text": "雍和宫游览：昭泰门 → 雍和门殿 → 雍和宫殿 → 永佑殿 → 法轮殿 → 万福阁",
+          "placeId": "place-yonghegong"
+        },
+        {
+          "id": "d3-10",
+          "time": "15:30",
+          "type": "walk",
+          "text": "沿雍和宫大街往南逛，佛具店、小吃店"
+        },
+        {
+          "id": "d3-11",
+          "time": "16:30",
+          "type": "restaurant",
+          "text": "晚餐：龙喜悦（北新桥店）生滚粥、烧腊、甜品",
+          "placeId": "place-longxiyue"
+        },
+        {
+          "id": "d3-12",
+          "time": "20:00",
+          "type": "rest",
+          "text": "簋街夜逛 or 返程北京贵州大厦",
+          "placeId": "place-hotel"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-09-27",
+      "title": "烤鸭收尾日",
+      "subtitle": "四季民福烤鸭 → 大兴机场各自返程",
+      "locations": [
+        "北京贵州大厦",
+        "四季民福",
+        "大兴机场"
+      ],
+      "weather": {
+        "condition": "待确认",
+        "tempHigh": null,
+        "tempLow": null
+      },
+      "schedule": [
+        {
+          "id": "d4-01",
+          "time": "10:00",
+          "type": "check-out",
+          "text": "北京贵州大厦办理退房（12:00前）",
+          "placeId": "place-hotel"
+        },
+        {
+          "id": "d4-02",
+          "time": "11:00",
+          "type": "restaurant",
+          "text": "午餐：四季民福烤鸭店（和平里店）步行900m",
+          "placeId": "place-sijiminfu"
+        },
+        {
+          "id": "d4-03",
+          "time": "12:30",
+          "type": "transport",
+          "text": "出发前往大兴机场（5号线→10号线→大兴机场线，约80-90分钟）",
+          "placeId": "place-daxing-airport"
+        },
+        {
+          "id": "d4-04",
+          "time": "14:00",
+          "type": "note",
+          "text": "预计抵达大兴机场"
+        },
+        {
+          "id": "d4-05",
+          "time": "15:45",
+          "type": "flight",
+          "text": "饼 & 五月 乘 MU5133 返程杭州",
+          "placeId": "place-daxing-airport"
+        },
+        {
+          "id": "d4-06",
+          "time": "17:20",
+          "type": "flight",
+          "text": "彤墨墨 乘 KN5391 返程永州",
+          "placeId": "place-daxing-airport"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "place-hangzhou-station",
+      "name": "杭州站",
+      "type": "station",
+      "lng": 120.1732,
+      "lat": 30.2452
+    },
+    {
+      "id": "place-beijing-station",
+      "name": "北京站",
+      "type": "station",
+      "lng": 116.4277,
+      "lat": 39.9031
+    },
+    {
+      "id": "place-yongzhou-airport",
+      "name": "永州零陵机场",
+      "type": "airport",
+      "lng": 111.62,
+      "lat": 26.463
+    },
+    {
+      "id": "place-daxing-airport",
+      "name": "北京大兴机场",
+      "type": "airport",
+      "lng": 116.4115,
+      "lat": 39.5098
+    },
+    {
+      "id": "place-hotel",
+      "name": "北京贵州大厦",
+      "type": "hotel",
+      "lng": 116.423,
+      "lat": 39.968
+    },
+    {
+      "id": "place-tiangongyuan",
+      "name": "天宫院小吃·宝子炒肝儿（草桥店）",
+      "type": "restaurant",
+      "lng": 116.352,
+      "lat": 39.858
+    },
+    {
+      "id": "place-thebox",
+      "name": "THE BOX 朝外",
+      "type": "shopping",
+      "lng": 116.455,
+      "lat": 39.925
+    },
+    {
+      "id": "place-shimao",
+      "name": "世贸天阶",
+      "type": "shopping",
+      "lng": 116.456,
+      "lat": 39.918
+    },
+    {
+      "id": "place-tmall",
+      "name": "T+ MALL",
+      "type": "shopping",
+      "lng": 116.457,
+      "lat": 39.915
+    },
+    {
+      "id": "place-pizzamama",
+      "name": "PIZZA MAMA 三里屯店",
+      "type": "restaurant",
+      "lng": 116.458,
+      "lat": 39.938
+    },
+    {
+      "id": "place-south-taikoo",
+      "name": "三里屯太古里南区",
+      "type": "shopping",
+      "lng": 116.457,
+      "lat": 39.937
+    },
+    {
+      "id": "place-badakitchen",
+      "name": "bada kitchen / 图图家冰品",
+      "type": "restaurant",
+      "lng": 116.455,
+      "lat": 39.94
+    },
+    {
+      "id": "place-north-taikoo",
+      "name": "三里屯太古里北区",
+      "type": "shopping",
+      "lng": 116.455,
+      "lat": 39.942
+    },
+    {
+      "id": "place-minzhongmin",
+      "name": "闽中闽（团结湖店）",
+      "type": "restaurant",
+      "lng": 116.47,
+      "lat": 39.942
+    },
+    {
+      "id": "place-birdsnest",
+      "name": "北京国家体育场（鸟巢）",
+      "type": "attraction",
+      "lng": 116.3963,
+      "lat": 39.9929
+    },
+    {
+      "id": "place-azhao",
+      "name": "阿招鸡煲（鸟巢店）",
+      "type": "restaurant",
+      "lng": 116.4,
+      "lat": 39.988
+    },
+    {
+      "id": "place-ditan",
+      "name": "地坛公园",
+      "type": "attraction",
+      "lng": 116.418,
+      "lat": 39.958
+    },
+    {
+      "id": "place-wudaoying",
+      "name": "五道营胡同",
+      "type": "attraction",
+      "lng": 116.416,
+      "lat": 39.948
+    },
+    {
+      "id": "place-masanyangyu",
+      "name": "马三洋芋片",
+      "type": "restaurant",
+      "lng": 116.415,
+      "lat": 39.945
+    },
+    {
+      "id": "place-guozijian",
+      "name": "国子监 + 孔庙",
+      "type": "attraction",
+      "lng": 116.413,
+      "lat": 39.947
+    },
+    {
+      "id": "place-yonghegong",
+      "name": "雍和宫",
+      "type": "attraction",
+      "lng": 116.417,
+      "lat": 39.952
+    },
+    {
+      "id": "place-longxiyue",
+      "name": "龙喜悦（北新桥店）",
+      "type": "restaurant",
+      "lng": 116.422,
+      "lat": 39.945
+    },
+    {
+      "id": "place-sijiminfu",
+      "name": "四季民福烤鸭店（和平里店）",
+      "type": "restaurant",
+      "lng": 116.423,
+      "lat": 39.965
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": [
+      {
+        "id": "ticket-yonghegong",
+        "day": 3,
+        "name": "雍和宫门票",
+        "requirement": "25元/人，需在「雍和宫游客信众服务」公众号预约，带身份证，16:30停止入场"
+      },
+      {
+        "id": "ticket-guozijian",
+        "name": "孔庙国子监门票",
+        "requirement": "30元/人，16:30停止入馆，游览约45分钟"
+      },
+      {
+        "id": "ticket-concert",
+        "day": 2,
+        "name": "深深的鸟巢场演唱会门票",
+        "requirement": "待补充"
+      }
+    ]
+  },
+  "preTrip": {
+    "packingItems": [],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": "待补充"
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    "饼 & 五月返程 MU5133 到达时间待确认",
+    "彤墨墨返程 KN5391 到达时间待确认",
+    "演唱会门票信息待补充",
+    "酒店房型和价格待补充"
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "beijing-handdrawn",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "places": [
+      {
+        "id": "mp-hotel",
+        "placeId": "place-hotel",
+        "name": "北京贵州大厦",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.423,
+          "lat": 39.968
+        }
+      },
+      {
+        "id": "mp-thebox",
+        "placeId": "place-thebox",
+        "name": "THE BOX 朝外",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.455,
+          "lat": 39.925
+        }
+      },
+      {
+        "id": "mp-shimao",
+        "placeId": "place-shimao",
+        "name": "世贸天阶",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.456,
+          "lat": 39.918
+        }
+      },
+      {
+        "id": "mp-southtaikoo",
+        "placeId": "place-south-taikoo",
+        "name": "三里屯太古里",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.457,
+          "lat": 39.937
+        }
+      },
+      {
+        "id": "mp-minzhongmin",
+        "placeId": "place-minzhongmin",
+        "name": "闽中闽（团结湖）",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.47,
+          "lat": 39.942
+        }
+      },
+      {
+        "id": "mp-birdsnest",
+        "placeId": "place-birdsnest",
+        "name": "鸟巢（国家体育场）",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.3963,
+          "lat": 39.9929
+        }
+      },
+      {
+        "id": "mp-ditan",
+        "placeId": "place-ditan",
+        "name": "地坛公园",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.418,
+          "lat": 39.958
+        }
+      },
+      {
+        "id": "mp-wudaoying",
+        "placeId": "place-wudaoying",
+        "name": "五道营胡同",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.416,
+          "lat": 39.948
+        }
+      },
+      {
+        "id": "mp-guozijian",
+        "placeId": "place-guozijian",
+        "name": "国子监 + 孔庙",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.413,
+          "lat": 39.947
+        }
+      },
+      {
+        "id": "mp-yonghegong",
+        "placeId": "place-yonghegong",
+        "name": "雍和宫",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.417,
+          "lat": 39.952
+        }
+      },
+      {
+        "id": "mp-longxiyue",
+        "placeId": "place-longxiyue",
+        "name": "龙喜悦（北新桥）",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.422,
+          "lat": 39.945
+        }
+      },
+      {
+        "id": "mp-sijiminfu",
+        "placeId": "place-sijiminfu",
+        "name": "四季民福烤鸭",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.423,
+          "lat": 39.965
+        }
+      },
+      {
+        "id": "mp-daxing",
+        "placeId": "place-daxing-airport",
+        "name": "大兴机场",
+        "mapRegionId": "beijing",
+        "geo": {
+          "lng": 116.4115,
+          "lat": 39.5098
+        }
+      }
+    ],
+    "routes": [
+      {
+        "id": "route-day-2",
+        "name": "第2天路线",
+        "day": 2,
+        "placeIds": [
+          "mp-hotel",
+          "mp-thebox",
+          "mp-shimao",
+          "mp-southtaikoo",
+          "mp-minzhongmin",
+          "mp-birdsnest",
+          "mp-hotel"
+        ]
+      },
+      {
+        "id": "route-day-3",
+        "name": "第3天路线",
+        "day": 3,
+        "placeIds": [
+          "mp-hotel",
+          "mp-ditan",
+          "mp-wudaoying",
+          "mp-guozijian",
+          "mp-yonghegong",
+          "mp-longxiyue",
+          "mp-hotel"
+        ]
+      },
+      {
+        "id": "route-day-4",
+        "name": "第4天路线",
+        "day": 4,
+        "placeIds": [
+          "mp-hotel",
+          "mp-sijiminfu",
+          "mp-daxing"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "day": 2,
+        "placeIds": [
+          "mp-hotel",
+          "mp-thebox",
+          "mp-shimao",
+          "mp-southtaikoo",
+          "mp-minzhongmin",
+          "mp-birdsnest",
+          "mp-hotel"
+        ]
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "mp-hotel",
+          "mp-ditan",
+          "mp-wudaoying",
+          "mp-guozijian",
+          "mp-yonghegong",
+          "mp-longxiyue",
+          "mp-hotel"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "mp-hotel",
+          "mp-sijiminfu",
+          "mp-daxing"
+        ]
+      }
+    ],
+    "regions": [
+      {
+        "id": "beijing",
+        "name": "北京",
+        "label": "北京"
+      }
+    ]
+  },
+  "routeMap": {
+    "defaultRegionId": "beijing",
+    "regions": [
+      {
+        "id": "beijing",
+        "label": "北京",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "beijing-handdrawn",
+        "mapModeReason": "explicit-diy-override",
+        "mapModeMetrics": {
+          "placeCount": 13,
+          "geoPlaceCount": 13,
+          "widthKm": 6.27,
+          "heightKm": 53.62,
+          "spanKm": 53.73,
+          "averageNearestKm": 4.32,
+          "components": 1,
+          "largestLegKm": 50.63,
+          "jumpRatio": 40.83
+        },
+        "days": [
+          2,
+          3,
+          4
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-11-beijing.webp",
+        "title": "北京 · 旅行路线",
+        "ariaLabel": "北京模板化旅行路线示意图，共3天",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "北京",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "mp-hotel",
+              "mp-thebox",
+              "mp-shimao",
+              "mp-southtaikoo",
+              "mp-minzhongmin",
+              "mp-birdsnest",
+              "mp-hotel"
+            ],
+            "paths": [
+              "M599.52 124 C597.7 182.1 611.8 236.0 640.87 282.66 C591.3 269.1 549.3 243.1 517.39 206.37 C568.2 228.6 621.0 235.3 672.59 226.03 C636.3 247.5 597.0 257.5 557.14 255.35 C604.0 220.6 637.7 175.9 656.25 124 C637.0 129.7 617.7 129.7 599.52 124"
+            ],
+            "overviewPaths": [
+              "M599.52 124 C563.4 143.8 535.4 171.8 517.39 206.37 C572.1 197.5 624.9 204.2 672.59 226.03 C630.4 224.5 591.2 234.4 557.14 255.35 C577.7 200.8 611.4 156.1 656.25 124 C637.0 118.3 617.7 118.3 599.52 124"
+            ]
+          },
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "mp-hotel",
+              "mp-ditan",
+              "mp-wudaoying",
+              "mp-guozijian",
+              "mp-yonghegong",
+              "mp-longxiyue",
+              "mp-hotel"
+            ],
+            "paths": [
+              "M599.52 124 C561.2 145.4 520.0 154.7 478.62 151.37 C516.0 191.9 561.4 219.1 612.1 231.39 C575.7 202.4 550.1 165.9 536.72 124 C588.3 155.4 644.3 170.4 701.44 168.01 C658.5 183.7 614.7 186.5 572.73 176.29 C587.1 161.2 596.2 143.4 599.52 124"
+            ],
+            "overviewPaths": [
+              "M599.52 124 C561.2 145.4 520.0 154.7 478.62 151.37 C501.1 147.9 520.9 138.6 536.72 124 C554.2 138.2 566.4 156.0 572.73 176.29 C587.1 161.2 596.2 143.4 599.52 124"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "mp-hotel",
+              "mp-sijiminfu",
+              "mp-daxing"
+            ],
+            "paths": [
+              "M599.52 124 C608.0 143.3 621.0 158.8 637.83 169.53 C650.6 275.9 633.8 377.4 588.45 468"
+            ],
+            "overviewPaths": [
+              "M599.52 124 C608.0 143.3 621.0 158.8 637.83 169.53 C650.6 275.9 633.8 377.4 588.45 468"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "mp-hotel",
+            "x": 599.52,
+            "y": 124,
+            "color": "#e77e22",
+            "tx": 677.52,
+            "ty": 62,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "北京贵州大厦"
+            ],
+            "query": "北京贵州大厦 北京",
+            "geo": {
+              "lng": 116.423,
+              "lat": 39.968
+            },
+            "days": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "mp-thebox",
+            "x": 640.87,
+            "y": 282.66,
+            "color": "#e77e22",
+            "tx": 608.87,
+            "ty": 332.66,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "THE BOX 朝外"
+            ],
+            "query": "THE BOX 朝外 北京",
+            "geo": {
+              "lng": 116.455,
+              "lat": 39.925
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "mp-shimao",
+            "x": 517.39,
+            "y": 206.37,
+            "color": "#e77e22",
+            "tx": 485.39,
+            "ty": 256.37,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "世贸天阶"
+            ],
+            "query": "世贸天阶 北京",
+            "geo": {
+              "lng": 116.456,
+              "lat": 39.918
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "mp-southtaikoo",
+            "x": 672.59,
+            "y": 226.03,
+            "color": "#e77e22",
+            "tx": 810.59,
+            "ty": 138.03,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "三里屯太古里"
+            ],
+            "query": "三里屯太古里 北京",
+            "geo": {
+              "lng": 116.457,
+              "lat": 39.937
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "mp-minzhongmin",
+            "x": 557.14,
+            "y": 255.35,
+            "color": "#e77e22",
+            "tx": 695.14,
+            "ty": 357.35,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "闽中闽（团结湖）"
+            ],
+            "query": "闽中闽（团结湖） 北京",
+            "geo": {
+              "lng": 116.47,
+              "lat": 39.942
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "mp-birdsnest",
+            "x": 656.25,
+            "y": 124,
+            "color": "#e77e22",
+            "tx": 794.25,
+            "ty": 226,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "鸟巢（国家体育场）"
+            ],
+            "query": "鸟巢（国家体育场） 北京",
+            "geo": {
+              "lng": 116.3963,
+              "lat": 39.9929
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "mp-ditan",
+            "x": 478.62,
+            "y": 151.37,
+            "color": "#618344",
+            "tx": 446.62,
+            "ty": 119.37,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "地坛公园"
+            ],
+            "query": "地坛公园 北京",
+            "geo": {
+              "lng": 116.418,
+              "lat": 39.958
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "mp-wudaoying",
+            "x": 612.1,
+            "y": 231.39,
+            "color": "#618344",
+            "tx": 690.1,
+            "ty": 307.39,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "五道营胡同"
+            ],
+            "query": "五道营胡同 北京",
+            "geo": {
+              "lng": 116.416,
+              "lat": 39.948
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "mp-guozijian",
+            "x": 536.72,
+            "y": 124,
+            "color": "#618344",
+            "tx": 614.72,
+            "ty": 62,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "国子监 + 孔庙"
+            ],
+            "query": "国子监 + 孔庙 北京",
+            "geo": {
+              "lng": 116.413,
+              "lat": 39.947
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "mp-yonghegong",
+            "x": 701.44,
+            "y": 168.01,
+            "color": "#618344",
+            "tx": 839.44,
+            "ty": 80.01,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "雍和宫"
+            ],
+            "query": "雍和宫 北京",
+            "geo": {
+              "lng": 116.417,
+              "lat": 39.952
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "mp-longxiyue",
+            "x": 572.73,
+            "y": 176.29,
+            "color": "#618344",
+            "tx": 604.73,
+            "ty": 226.29,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "龙喜悦（北新桥）"
+            ],
+            "query": "龙喜悦（北新桥） 北京",
+            "geo": {
+              "lng": 116.422,
+              "lat": 39.945
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "mp-sijiminfu",
+            "x": 637.83,
+            "y": 169.53,
+            "color": "#209aaa",
+            "tx": 715.83,
+            "ty": 245.53,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "四季民福烤鸭"
+            ],
+            "query": "四季民福烤鸭 北京",
+            "geo": {
+              "lng": 116.423,
+              "lat": 39.965
+            },
+            "days": [
+              4
+            ]
+          },
+          {
+            "id": "mp-daxing",
+            "x": 588.45,
+            "y": 468,
+            "color": "#209aaa",
+            "tx": 620.45,
+            "ty": 436,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "大兴机场"
+            ],
+            "query": "大兴机场 北京",
+            "geo": {
+              "lng": 116.4115,
+              "lat": 39.5098
+            },
+            "days": [
+              4
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "mp-hotel",
+          "mp-shimao",
+          "mp-southtaikoo",
+          "mp-minzhongmin",
+          "mp-birdsnest",
+          "mp-ditan",
+          "mp-guozijian",
+          "mp-longxiyue",
+          "mp-sijiminfu",
+          "mp-daxing"
+        ],
+        "dailyLayouts": {
+          "2": {
+            "places": [
+              "mp-hotel",
+              "mp-thebox",
+              "mp-shimao",
+              "mp-southtaikoo",
+              "mp-minzhongmin",
+              "mp-birdsnest"
+            ],
+            "labels": {
+              "mp-hotel": {
+                "x": 677.52,
+                "y": 62,
+                "anchor": "start"
+              },
+              "mp-thebox": {
+                "x": 608.87,
+                "y": 332.66,
+                "anchor": "end"
+              },
+              "mp-shimao": {
+                "x": 485.39,
+                "y": 256.37,
+                "anchor": "end"
+              },
+              "mp-southtaikoo": {
+                "x": 810.59,
+                "y": 138.03,
+                "anchor": "start"
+              },
+              "mp-minzhongmin": {
+                "x": 695.14,
+                "y": 357.35,
+                "anchor": "start"
+              },
+              "mp-birdsnest": {
+                "x": 794.25,
+                "y": 226,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 620.19,
+                "y": 203.33
+              },
+              {
+                "items": [],
+                "x": 579.13,
+                "y": 244.52
+              },
+              {
+                "items": [],
+                "x": 594.99,
+                "y": 216.2
+              },
+              {
+                "items": [],
+                "x": 614.87,
+                "y": 240.69
+              },
+              {
+                "items": [],
+                "x": 606.69,
+                "y": 189.68
+              },
+              {
+                "items": [],
+                "x": 627.88,
+                "y": 124
+              }
+            ]
+          },
+          "3": {
+            "places": [
+              "mp-hotel",
+              "mp-ditan",
+              "mp-wudaoying",
+              "mp-guozijian",
+              "mp-yonghegong",
+              "mp-longxiyue"
+            ],
+            "labels": {
+              "mp-hotel": {
+                "x": 677.52,
+                "y": 62,
+                "anchor": "start"
+              },
+              "mp-ditan": {
+                "x": 446.62,
+                "y": 119.37,
+                "anchor": "end"
+              },
+              "mp-wudaoying": {
+                "x": 690.1,
+                "y": 307.39,
+                "anchor": "start"
+              },
+              "mp-guozijian": {
+                "x": 614.72,
+                "y": 62,
+                "anchor": "start"
+              },
+              "mp-yonghegong": {
+                "x": 839.44,
+                "y": 80.01,
+                "anchor": "start"
+              },
+              "mp-longxiyue": {
+                "x": 604.73,
+                "y": 226.29,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 539.07,
+                "y": 137.69
+              },
+              {
+                "items": [],
+                "x": 545.36,
+                "y": 191.38
+              },
+              {
+                "items": [],
+                "x": 574.41,
+                "y": 177.69
+              },
+              {
+                "items": [],
+                "x": 619.08,
+                "y": 146
+              },
+              {
+                "items": [],
+                "x": 637.09,
+                "y": 172.15
+              },
+              {
+                "items": [],
+                "x": 586.13,
+                "y": 150.14
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "mp-hotel",
+              "mp-sijiminfu",
+              "mp-daxing"
+            ],
+            "labels": {
+              "mp-hotel": {
+                "x": 677.52,
+                "y": 62,
+                "anchor": "start"
+              },
+              "mp-sijiminfu": {
+                "x": 715.83,
+                "y": 245.53,
+                "anchor": "start"
+              },
+              "mp-daxing": {
+                "x": 620.45,
+                "y": 436,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 618.67,
+                "y": 146.76
+              },
+              {
+                "items": [],
+                "x": 613.14,
+                "y": 318.76
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
